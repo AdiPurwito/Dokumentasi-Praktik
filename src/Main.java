@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // 4. Extract Method: Memanggil method untuk menjalankan aplikasi
         jalankanAplikasi();
     }
 
@@ -12,7 +11,6 @@ public class Main {
 
         double Celsius = scanner.nextDouble();
 
-        // 6. Extract Class: Membuat objek dari kelas yang sudah diekstrak
         KalkulatorSuhu kalkulator = new KalkulatorSuhu(Celsius);
         double suhuFahrenheit = kalkulator.konversiKeFahrenheit();
 
